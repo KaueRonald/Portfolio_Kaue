@@ -15,7 +15,7 @@ import CastForEducationIcon from '@mui/icons-material/CastForEducation';
 const Carousell: React.FC = () => {
     return (
         <Box className={styles.container}>
-            <Carousel className={styles.Carrousel} showThumbs={false}
+            <Carousel className={styles.Carrousel} showThumbs={false} interval={5000}
                 autoPlay infiniteLoop showArrows={false} showIndicators={true}
                 renderIndicator={(onClickHandler, isSelected, index, label) => {
                     const defStyle = { marginLeft: 20, color: 'white', cursor: 'pointer' };
@@ -86,7 +86,7 @@ const Carousell: React.FC = () => {
                 </Box>
 
             </Carousel>
-            <Carousel className={styles.Carrousel} showThumbs={false}
+            <Carousel className={styles.Carrousel} showThumbs={false} interval={5000}
                 autoPlay infiniteLoop showArrows={false} showIndicators={true}
                 renderIndicator={(onClickHandler, isSelected, index, label) => {
                     const defStyle = { marginLeft: 20, color: 'white', cursor: 'pointer' };

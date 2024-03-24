@@ -42,7 +42,7 @@ const NavBar: React.FC = () => {
                         'aria-labelledby': 'basic-button',
                     }}
                 >
-                    <a className={styles.linkMenu} href="https://github.com/KaueRonald" target="_blank"><MenuItem onClick={handleClose}><InstagramIcon />&nbsp;Instagram</MenuItem></a>
+                    <a className={styles.linkMenu} href="https://www.instagram.com/kaueronald_/" target="_blank"><MenuItem onClick={handleClose}><InstagramIcon />&nbsp;Instagram</MenuItem></a>
                     <a className={styles.linkMenu} href="https://www.linkedin.com/in/kau%C3%AA-ronald-981a8a216/" target="_blank"><MenuItem onClick={handleClose}><LinkedInIcon />&nbsp;Linkedin</MenuItem></a>
                     <a className={styles.linkMenu} href="https://github.com/KaueRonald" target="_blank"><MenuItem onClick={handleClose}><GitHubIcon />&nbsp;GitHub</MenuItem></a>
                     
