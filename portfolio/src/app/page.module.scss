@@ -1,3 +1,324 @@
+@import "../themes/index.scss";
+
 .container {
   display: flex;
+  flex-direction: column;
+}
+
+.sectionOne {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .title {
+    color: $hovers;
+    font-size: 60px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    margin: 10px;
+  }
+
+  .fadein h1 {
+    opacity: 0;
+    animation: fade-in-animation 3.0s forwards;
+  }
+
+  @keyframes fade-in-animation {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+  .subTitle {
+    color: $background-text;
+    font-family: "Roboto", sans-serif;
+    margin: 10px 10px 20px 10px;
+  }
+
+  .btnsSection {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-bottom: 215px;
+  }
+
+  .btns {
+    height: 40px;
+    width: 125px;
+    color: $background-text;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    border-color: $hovers;
+  }
+
+  .btns:hover {
+    border-color: $background-text;
+  }
+
+  .iconMouse {
+    color: $background-text;
+  }
+
+  .iconScroll {
+    color: $background-text;
+    margin-bottom: 100px;
+  }
+
+  .saltitar {
+    animation: saltitar 1s ease infinite;
+  }
+
+  @keyframes saltitar {
+
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+
+    50% {
+      transform: translateY(-20px);
+    }
+  }
+
+  @media (max-width: 500px) {
+    .title {
+      font-size: 35px;
+    }
+  }
+
+}
+
+.sectionTwo {
+  background-color: $background-text;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 50px;
+  border-top: 4px solid $hovers;
+  border-bottom: 4px solid $hovers;
+  border-radius: 15px;
+
+  .ContainerSection {
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    min-width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  .ContainerTitle {
+    display: flex;
+    justify-content: center;
+    padding: 15px;
+  }
+
+  .imgPerfil {
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 30px;
+    border: 2px solid $hovers;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  }
+
+  .imgPerfil:hover {
+    transform: scale(1.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.9);
+  }
+
+  .ContainerAbout {
+    flex: 1;
+    max-width: 600px;
+    min-width: 300px;
+    margin-bottom: 30px;
+    padding: 0 15px;
+  }
+
+  .iconAspas {
+    display: flex;
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  .iconAspasTwo {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .iconsABout {
+    margin-top: 50px;
+    color: $principal;
+  }
+
+  .DescAbout {
+    color: $principal;
+    text-align: justify;
+    font-weight: 500;
+    font-size: large;
+  }
+
+  .ContainerTitleTech {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .TitleTech {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 50px;
+    color: $principal;
+    margin: 0 10px 80px 10px;
+    padding: 0 25px 0 25px;
+    border-radius: 10px;
+  }
+
+  .SkillsImage {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 95%;
+    margin-bottom: 30px;
+
+    .ContainerImage {
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+      flex-direction: column;
+      margin: 10px;
+    }
+
+    .ImageIcon {
+      margin: 0;
+      transition: transform 0.3s ease;
+    }
+
+    .ImageIcon:hover {
+      transform: scale(1.1);
+    }
+  }
+
+}
+
+.sectionThree {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 100px;
+
+  .ContainerTitleProjects {
+    margin: 100px 10px 0 10px;
+    font-size: 25px;
+    color: $background-text;
+    padding: 0 25px 0 25px;
+    border-radius: 10px;
+    text-align: center;
+  }
+}
+
+.sectionFour {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.sectionFive {
+  background-color: $background-text;
+  border-top: 4px solid $hovers;
+  border-bottom: 4px solid $hovers;
+  border-radius: 15px;
+
+  .ContainerTitleContact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-top: 80px;
+    color: $principal;
+    padding: 0 25px 0 25px;
+    border-radius: 10px;
+    text-align: center;
+  }
+
+  .TitleContact {
+    font-size: 55px;
+    padding: 0 15px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+  }
+
+  .InfoContact {
+    margin-bottom: 50px;
+  }
+
+  .ContainerForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.sectionSix {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 10px 0px 20px;
+
+  .hrline {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 70%;
+  }
+
+  .credits {
+    color: $hovers;
+    display: flex;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 985px) {
+  .sectionTwo {
+    display: flex;
+    flex-direction: column;
+
+    .ContainerSection {
+      display: flex;
+      text-align: center;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .iconsABout {
+      margin-top: 0px;
+      color: $principal;
+    }
+  }
+
+  .sectionThree {
+    display: flex;
+    flex-direction: column;
+  }
 }
