@@ -1,0 +1,48 @@
+@import "../../themes/index.scss";
+
+.container {
+    color: $background-text;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    text-align: center;
+    align-items: start;
+    margin-bottom: 50px;
+    gap: 20px;
+
+    .collums {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .titleClass {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        color: $hovers;
+        margin-top: 20px;
+    }
+
+    .line {
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        min-width: 100px;
+        margin-top: 10px;
+        color: $background-text;
+        text-decoration: none;
+        cursor: pointer;
+    }
+
+    .line:hover {
+        color: $hovers;
+    }
+}
+
+@media (max-width: 765px) {
+    .container {
+        grid-template-columns: 1fr 1fr;
+    }
+}

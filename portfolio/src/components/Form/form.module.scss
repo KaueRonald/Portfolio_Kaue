@@ -1,0 +1,45 @@
+@import "../../themes/index.scss";
+
+.container {
+    border: 3px solid $hovers;
+    background-color: $principal;
+    padding: 20px;
+    margin: 0px 20px 100px 20px;
+    border-radius: 10px;
+
+
+    .formDataOne {
+        display: flex;
+    }
+
+    .inputs {
+        margin: 10px 30px 0px 30px;
+        background-color: $background-text;
+        border-radius: 10px;
+        min-width: 180px;
+    }
+
+    .btnForm {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .btnSubmit {
+        margin-top: 20px;
+        height: 40px;
+        width: 180px;
+        color: $background-text;
+        font-family: "Roboto", sans-serif;
+        font-weight: 700;
+        border-color: $hovers;
+    }
+}
+
+@media (max-width: 630px) {
+    .formDataOne {
+        display: flex;
+        flex-direction: column;
+    }
+}
