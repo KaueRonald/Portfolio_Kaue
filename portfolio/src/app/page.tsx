@@ -13,6 +13,7 @@ import Carousell from "../components/Carousel/index"
 import Cards from "@/components/Cards";
 import Form from "@/components/Form";
 import Rodape from "@/components/Rodape";
+import Skills from "@/components/Skills";
 
 export default function Home() {
   return (
@@ -21,12 +22,12 @@ export default function Home() {
 
       <Box className={styles.sectionOne}>
         <Box className={`${styles.fadein}`}>
-          <h1 className={styles.title}>Olá, sou Kauê Ronald <br /> Desenvolvedor de Sistemas</h1>
+          <h1 className={styles.title}>Olá, sou Kauê Ronald <br /> Desenvolvedor Full Stack</h1>
         </Box>
         <p className={styles.subTitle}>Graduado em Análise e Desenvolvimento de Sistemas.</p>
         <Box className={styles.btnsSection}>
           <Button href="#form" className={styles.btns} variant="outlined">Contate-me</Button>
-          <a href="https://drive.google.com/file/d/1K6-WxCLGqeG5OTzbQKhy7TyNLO7oTCCv/view?usp=drive_link" target="_blank"><Button variant="outlined" className={styles.btns}>Currículo</Button></a>
+          <a href="/curriculo.pdf" target="_blank" rel="noopener noreferrer"><Button variant="outlined" className={styles.btns}>Currículo</Button></a>
         </Box>
         <MouseIcon id="QuemSou" className={`${styles.iconMouse} ${styles.saltitar}`} fontSize="large" />
         <KeyboardDoubleArrowDownIcon className={`${styles.iconScroll} ${styles.saltitar}`} fontSize="large" />
@@ -61,15 +62,19 @@ export default function Home() {
               busco uma oportunidade de ingressar no mercado de trabalho.</p>
           </Box>
         </Box>
-        <Box id="Diferenciais" className={styles.ContainerTitleTech}>
-          <h1 className={styles.TitleTech}> MINHAS SKILLS</h1>
-        </Box>
       </Box>
       {/* seção três */}
       <Box className={styles.sectionThree}>
+        <Box id="Diferenciais" className={styles.ContainerTitleTech}>
+          <h1 className={styles.TitleTech}>SKILLS & TECNOLOGIAS</h1>
+        </Box>
         <Carousell />
+        <Box className={styles.containerTools}>
+          
+          <Skills/>
+        </Box>
         <Box className={styles.ContainerTitleProjects}>
-          <h1 id="Projetos" className={styles.TitleProjects}> MEUS PROJETOS</h1>
+          <h1 id="Projetos" className={styles.TitleProjects}>PROJETOS</h1>
         </Box>
       </Box>
 

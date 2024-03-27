@@ -17,7 +17,7 @@
     font-size: 60px;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
-    margin: 10px;
+    margin: 15px;
   }
 
   .fadein h1 {
@@ -101,7 +101,6 @@
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-bottom: 50px;
   border-top: 4px solid $hovers;
   border-bottom: 4px solid $hovers;
   border-radius: 15px;
@@ -109,7 +108,8 @@
   .ContainerSection {
     display: flex;
     justify-content: space-evenly;
-    margin-top: 50px;
+    margin-top: 70px;
+    margin-bottom: 70px;
     min-width: 100%;
     align-items: center;
     flex-wrap: wrap;
@@ -157,7 +157,6 @@
   }
 
   .iconsABout {
-    margin-top: 50px;
     color: $principal;
   }
 
@@ -166,26 +165,6 @@
     text-align: justify;
     font-weight: 500;
     font-size: large;
-  }
-
-  .ContainerTitleTech {
-    margin-top: 70px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-align: center;
-    width: 100%;
-  }
-
-  .TitleTech {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    font-size: 50px;
-    color: $principal;
-    margin: 0 10px 80px 10px;
-    padding: 0 25px 0 25px;
-    border-radius: 10px;
   }
 
   .SkillsImage {
@@ -222,6 +201,41 @@
   align-items: center;
   text-align: center;
   margin-bottom: 100px;
+
+  .ContainerTitleTech {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .TitleTech {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 50px;
+    color: $background-text;
+    margin: 0 10px 80px 10px;
+    padding: 0 25px 0 25px;
+    border-radius: 10px;
+  }
+
+  .containerTools {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    margin-top: 60px;
+  }
+
+  .tecnoTools {
+    padding: 10px;
+    margin-bottom: 60px;
+    color: $background-text;
+  }
 
   .ContainerTitleProjects {
     margin: 100px 10px 0 10px;
@@ -321,5 +335,16 @@
   .sectionThree {
     display: flex;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 444px) {
+  .sectionThree {
+    display: flex;
+    flex-direction: column;
+
+    .TitleTech {
+      font-size: 35px;
+    }
   }
 }

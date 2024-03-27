@@ -30,15 +30,13 @@
     }
 
     .Title {
-        text-align: left;
         margin-bottom: 20px;
     }
 
     .ContentOne {
         display: flex;
-        text-align: center;
+        text-align: left;
         justify-content: center;
-        flex-direction: row;
         gap: 10px;
         margin-bottom: 20px;
         padding: 15px
@@ -55,7 +53,7 @@
     }
 
     .text {
-        text-align: left;
+        text-align: justify;
         min-width: 150px;
     }
 
@@ -102,6 +100,11 @@
     .ContentOne {
         display: flex;
         flex-direction: column;
+        align-items: center;
+    }
+
+    .Title {
+        text-align: center;
     }
 
     .imgIcon {

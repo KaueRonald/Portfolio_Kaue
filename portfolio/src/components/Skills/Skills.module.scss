@@ -1,0 +1,193 @@
+.skillsContainer {
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        gap: 20px;
+        list-style: none;
+    }
+
+    .example {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .example .iconcontent {
+        margin: 20px 10px;
+        position: relative;
+    }
+
+    .example .iconcontent .tooltip {
+        position: absolute;
+        top: -30px;
+        left: 50%;
+        transform: translateX(-50%);
+        color: #fff;
+        padding: 6px 10px;
+        border-radius: 5px;
+        opacity: 0;
+        visibility: hidden;
+        font-size: 14px;
+        transition: all 0.3s ease;
+    }
+
+    .example .iconcontent:hover .tooltip {
+        opacity: 1;
+        visibility: visible;
+        top: -50px;
+    }
+
+    .example .iconcontent a {
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 85px;
+        height: 85px;
+        border-radius: 50%;
+        color: #4d4d4d;
+        background-color: #fff;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .example .iconcontent a:hover {
+        box-shadow: 3px 2px 45px 0px rgb(0 0 0 / 12%);
+    }
+
+    .example .iconcontent a svg {
+        position: relative;
+        z-index: 1;
+        width: 70px;
+        height: 70px;
+    }
+
+    .example .iconcontent a:hover {
+        color: white;
+    }
+
+    .example .iconcontent a .filled {
+        position: absolute;
+        top: auto;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 0;
+        background-color: #000;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .example .iconcontent a:hover .filled {
+        height: 100%;
+    }
+
+    .example .iconcontent a[data-social="Javascript"] .filled,
+    .example .iconcontent a[data-social="Javascript"]~.tooltip {
+        background: linear-gradient(45deg,
+                #d8cd31,
+                #000);
+    }
+
+    .example .iconcontent a[data-social="NodeJs"] .filled,
+    .example .iconcontent a[data-social="NodeJs"]~.tooltip {
+        background: linear-gradient(45deg,
+                #4caf50,
+                #000);
+
+    }
+
+    .example .iconcontent a[data-social="Java"] .filled,
+    .example .iconcontent a[data-social="Java"]~.tooltip {
+        background: linear-gradient(45deg,
+                #1f2f81,
+                #b30b0b);
+    }
+
+    .example .iconcontent a[data-social="Spring"] .filled,
+    .example .iconcontent a[data-social="Spring"]~.tooltip {
+        background: linear-gradient(45deg,
+                #80ea6e,
+                #51852e);
+    }
+
+    .example .iconcontent a[data-social="HTML"] .filled,
+    .example .iconcontent a[data-social="HTML"]~.tooltip {
+        background: linear-gradient(45deg,
+                #e46b2a,
+                #e65100);
+    }
+
+    .example .iconcontent a[data-social="CSS"] .filled,
+    .example .iconcontent a[data-social="CSS"]~.tooltip {
+        background: linear-gradient(45deg,
+                #2AA4F4,
+                #007AD9);
+    }
+
+    .example .iconcontent a[data-social="SASS"] .filled,
+    .example .iconcontent a[data-social="SASS"]~.tooltip {
+        background: linear-gradient(45deg,
+                #f06292,
+                #000);
+    }
+
+    .example .iconcontent a[data-social="Typescript"] .filled,
+    .example .iconcontent a[data-social="Typescript"]~.tooltip {
+        background: linear-gradient(45deg,
+                #2AA4F4,
+                #007AD9);
+    }
+
+    .example .iconcontent a[data-social="React"] .filled,
+    .example .iconcontent a[data-social="React"]~.tooltip {
+        background: linear-gradient(45deg,
+                #2AA4F4,
+                #007AD9);
+    }
+
+    .example .iconcontent a[data-social="NextJs"] .filled,
+    .example .iconcontent a[data-social="NextJs"]~.tooltip {
+        background: linear-gradient(45deg,
+                #dededf,
+                #1a1a1a);
+    }
+
+    .example .iconcontent a[data-social="Git"] .filled,
+    .example .iconcontent a[data-social="Git"]~.tooltip {
+        background: linear-gradient(45deg,
+                #bd3f05,
+                #cccbcb);
+    }
+
+    .example .iconcontent a[data-social="Postgress"] .filled,
+    .example .iconcontent a[data-social="Postgress"]~.tooltip {
+        background: linear-gradient(45deg,
+                #0277BD,
+                #ffffff);
+    }
+
+}
+
+@media (max-width: 770px) {
+    .skillsContainer {
+        ul {
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+        }
+    }
+}
+
+@media (max-width: 510px) {
+    .skillsContainer {
+        ul {
+            grid-template-columns: 1fr 1fr 1fr;
+        }
+    }
+}
+
+@media (max-width: 378px) {
+    .skillsContainer {
+        ul {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}

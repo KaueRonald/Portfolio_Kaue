@@ -15,7 +15,7 @@ import CastForEducationIcon from '@mui/icons-material/CastForEducation';
 const Carousell: React.FC = () => {
     return (
         <Box className={styles.container}>
-            <Carousel className={styles.Carrousel} showThumbs={false} interval={5000}
+            <Carousel className={styles.Carrousel} showThumbs={false} interval={14000} showStatus={false}
                 autoPlay infiniteLoop showArrows={false} showIndicators={true}
                 renderIndicator={(onClickHandler, isSelected, index, label) => {
                     const defStyle = { marginLeft: 20, color: 'white', cursor: 'pointer' };
@@ -80,13 +80,13 @@ const Carousell: React.FC = () => {
                         <Box>
                             <h4 className={styles.Title}>Gestão de Projeto</h4>
                             <p className={styles.text}>Adotar abordagens tradicionais, como o Modelo Cascata, 
-                            ou metodologias ágeis, dependendo das necessidades e características do projeto.</p>
+                            ou também metodologias ágeis, dependendo das necessidades e características do projeto.</p>
                         </Box>
                     </Box>
                 </Box>
 
             </Carousel>
-            <Carousel className={styles.Carrousel} showThumbs={false} interval={5000}
+            <Carousel className={styles.Carrousel} showThumbs={false} interval={14000} showStatus={false}
                 autoPlay infiniteLoop showArrows={false} showIndicators={true}
                 renderIndicator={(onClickHandler, isSelected, index, label) => {
                     const defStyle = { marginLeft: 20, color: 'white', cursor: 'pointer' };
@@ -115,7 +115,7 @@ const Carousell: React.FC = () => {
                         <Box>
                             <h4 className={styles.Title}>Loopis - Soluções Tecnológicas</h4>
                             <p className={styles.text}>Tive a oportunidade de trabalhar 2 anos na empresa Júnior do IFPB- campus CZ. 
-                            Onde na área de projetos participei de projetos reais para clientes da empresa, onde adquiri conhecimento e coloquei em prática. </p>
+                            Onde na área de projetos participei de projetos reais para clientes da empresa, onde eu adquiri conhecimento e coloquei em prática. </p>
                         </Box>
                     </Box>
                 </Box>
