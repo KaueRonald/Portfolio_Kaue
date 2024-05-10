@@ -54,35 +54,35 @@ const Rodape: React.FC = () => {
                     spy={true}
                     smooth={true}
                 >
-                    <a className={styles.line} >Home</a>
+                    <p className={styles.line} >Home</p>
                 </Link>
                 <Link
                     to="QuemSou"
                     spy={true}
                     smooth={true}
                 >
-                    <a className={styles.line}>Quem sou</a>
+                    <p className={styles.line}>Quem sou</p>
                 </Link>
                 <Link
                     to="Diferenciais"
                     spy={true}
                     smooth={true}
                 >
-                    <a className={styles.line} href="#Diferenciais">Skills</a>
+                    <p className={styles.line}>Skills</p>
                 </Link>
                 <Link
                     to="Projetos"
                     spy={true}
                     smooth={true}
                 >
-                    <a className={styles.line} href="#Projetos">Projetos</a>
+                    <p className={styles.line} >Projetos</p>
                 </Link>
                 <Link
                     to="form"
                     spy={true}
                     smooth={true}
                 >
-                    <a className={styles.line}>Fale comigo</a>
+                    <p className={styles.line}>Fale comigo</p>
                 </Link>
             </Box>
             <Box className={styles.collums}>
