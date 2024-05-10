@@ -1,3 +1,4 @@
+'use client'
 import { Box, Button } from "@mui/material";
 import Image from "next/image";
 import kaue from "../../public/kaueR.jpeg"
@@ -14,6 +15,7 @@ import Cards from "@/components/Cards";
 import Form from "@/components/Form";
 import Rodape from "@/components/Rodape";
 import Skills from "@/components/Skills";
+import { Link } from "react-scroll";
 
 export default function Home() {
   return (
@@ -26,8 +28,14 @@ export default function Home() {
         </Box>
         <p className={styles.subTitle}>Graduado em Análise e Desenvolvimento de Sistemas.</p>
         <Box className={styles.btnsSection}>
-          <Button href="#form" className={styles.btns} variant="outlined">Contate-me</Button>
-          <a href="/Curriculo.pdf" target="_blank" rel="noopener noreferrer"><Button variant="outlined" className={styles.btns}>Currículo</Button></a>
+          <Link
+            to="form"
+            spy={true}
+            smooth={true}
+          >
+            <Button className={styles.btns} variant="outlined">Contate-me</Button>
+          </Link>
+          <Button href="/Curriculo.pdf" target="_blank" rel="noopener noreferrer" variant="outlined" className={styles.btns}>Currículo</Button>
         </Box>
         <MouseIcon id="QuemSou" className={`${styles.iconMouse} ${styles.saltitar}`} fontSize="large" />
         <KeyboardDoubleArrowDownIcon className={`${styles.iconScroll} ${styles.saltitar}`} fontSize="large" />
@@ -70,8 +78,8 @@ export default function Home() {
         </Box>
         <Carousell />
         <Box className={styles.containerTools}>
-          
-          <Skills/>
+
+          <Skills />
         </Box>
         <Box className={styles.ContainerTitleProjects}>
           <h1 id="Projetos" className={styles.TitleProjects}>PRINCIPAIS PROJETOS</h1>

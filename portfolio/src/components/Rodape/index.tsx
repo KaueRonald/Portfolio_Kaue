@@ -7,6 +7,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import ContentCopyIcon from '@mui/icons-material/ContentCopy';
 import { toast } from 'react-toastify';
+import { Link } from 'react-scroll';
 
 function NotifySucessTel(): any {
     toast.success("O telefone foi copiado!")
@@ -48,11 +49,41 @@ const Rodape: React.FC = () => {
         <Box className={styles.container}>
             <Box className={styles.collums}>
                 <h3 className={styles.titleClass}>MENU</h3>
-                <a className={styles.line} href="#home">Home</a>
-                <a className={styles.line} href="#QuemSou">Quem sou</a>
-                <a className={styles.line} href="#Diferenciais">Skills</a>
-                <a className={styles.line} href="#Projetos">Projetos</a>
-                <a className={styles.line} href="#form">Fale comigo</a>
+                <Link
+                    to='home'
+                    spy={true}
+                    smooth={true}
+                >
+                    <a className={styles.line} >Home</a>
+                </Link>
+                <Link
+                    to="QuemSou"
+                    spy={true}
+                    smooth={true}
+                >
+                    <a className={styles.line}>Quem sou</a>
+                </Link>
+                <Link
+                    to="Diferenciais"
+                    spy={true}
+                    smooth={true}
+                >
+                    <a className={styles.line} href="#Diferenciais">Skills</a>
+                </Link>
+                <Link
+                    to="Projetos"
+                    spy={true}
+                    smooth={true}
+                >
+                    <a className={styles.line} href="#Projetos">Projetos</a>
+                </Link>
+                <Link
+                    to="form"
+                    spy={true}
+                    smooth={true}
+                >
+                    <a className={styles.line}>Fale comigo</a>
+                </Link>
             </Box>
             <Box className={styles.collums}>
                 <h3 className={styles.titleClass}>REDES SOCIAIS</h3>
