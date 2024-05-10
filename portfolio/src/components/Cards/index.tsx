@@ -2,14 +2,17 @@ import { Box, Button, Card, CardActions, CardContent, CardMedia, Typography } fr
 import React from 'react';
 import styles from "./Cards.module.scss"
 import NoBullying from '../../../public/imageCard/logoNB.png';
-import PortifolioLogo from '../../../public/imageCard/KRportifolio.png'
+import Tridev from '../../../public/imageCard/tridevportfolio.png'
 import LogoAPI from '../../../public/imageCard/LogoApi.png'
 import TypescriptIcon from '../../../public/iconsCard/TypescriptIcon.png';
 import NextIcon from '../../../public/iconsCard/Next.png';
 import ReactIcon from '../../../public/iconsCard/ReactIcon.png';
 import MUIIcon from '../../../public/iconsCard/mui.png';
-import JavaIcon from '../../../public/iconsCard/JavaIcon.png';
-import SpringIcon from '../../../public/iconsCard/SpringIcon.png';
+import NodeIcon from '../../../public/iconsCard/NodeIcon.png';
+import PrismaIcon from '../../../public/iconsCard/PrismaIcon.png';
+import DockerIcon from '../../../public/iconsCard/DockerIcon.png';
+import ExpressIcon from '../../../public/iconsCard/ExpressIcon.png';
+import PostgresIcon from '../../../public/iconsCard/PostgresIcon.png';
 import Image from 'next/image';
 
 const Cards: React.FC = () => {
@@ -18,12 +21,12 @@ const Cards: React.FC = () => {
             <Card className={styles.card} sx={{ maxWidth: 345, minWidth: 280 }}>
                 <CardMedia
                     sx={{ height: 140 }}
-                    image={PortifolioLogo.src}
-                    title="imagem portifolio"
+                    image={Tridev.src}
+                    title="imagem Tridev"
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        Portifólio Kauê Ronald
+                        Tridev Soluções
                     </Typography>
                     <Box>
                         <Image src={TypescriptIcon} alt='Typescript' />
@@ -31,12 +34,12 @@ const Cards: React.FC = () => {
                         <Image src={MUIIcon} alt='MUI' />
                     </Box>
                     <Typography variant="body2" color="text.secondary">
-                        O meu portfólio reflete uma parte significativa da minha identidade e das minhas experiências na minha carreira como programador.
+                        Site da minha empresa de freelances, projetos que faço para ter mais experiência junto com mais dois desenvolvedores.
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button href='https://github.com/KaueRonald/Portfolio_Kaue' target='_blank' className={styles.btns} size="small">GitHub</Button>
-                    <Button href='#home' className={styles.btns} size="small">Deploy</Button>
+                    <Button href='https://github.com/Luisfelippedev/tridev' target='_blank' className={styles.btns} size="small">GitHub</Button>
+                    <Button href='https://www.tridev.com.br/' target='_blank' className={styles.btns} size="small">Deploy</Button>
                 </CardActions>
             </Card>
 
@@ -72,18 +75,23 @@ const Cards: React.FC = () => {
                 />
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="div">
-                        Todo List Java - API
+                        API de reserva de horário
                     </Typography>
                     <Box>
-                        <Image src={JavaIcon} alt='Typescript' />
-                        <Image src={SpringIcon} alt='React' />
+                        <Image src={NodeIcon} alt='Node' />
+                        <Image src={TypescriptIcon} alt='Typescript' />
+                        <Image src={PrismaIcon} alt='Prisma' />
+                        <Image src={DockerIcon} alt='Docker' />
+                        <Image src={ExpressIcon} alt='Express' />
+                        <Image src={PostgresIcon} alt='Postgresql' />
                     </Box>
                     <Typography variant="body2" color="text.secondary">
-                        API construída no desenvolver do Curso de Java da empresa Rocketseat! Onde reafirmei conhecimentos de Java com Spring.
+                        API de reserva/agendamento de serviços de beleza, está hospedada na plataforma render, com documentação em swagger.
                     </Typography>
                 </CardContent>
                 <CardActions>
-                    <Button href='https://github.com/KaueRonald/todolistjava' target='_blank' className={styles.btns} size="small">GitHub</Button>
+                    <Button href='https://github.com/KaueRonald/reservation' target='_blank' className={styles.btns} size="small">GitHub</Button>
+                    <Button href='https://reservation-api-305u.onrender.com/api-docs' target='_blank' className={styles.btns} size="small">Deploy</Button>
                 </CardActions>
             </Card>
         </Box>

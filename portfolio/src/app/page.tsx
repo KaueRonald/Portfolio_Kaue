@@ -35,7 +35,7 @@ export default function Home() {
           >
             <Button className={styles.btns} variant="outlined">Contate-me</Button>
           </Link>
-          <Button href="/curriculo.pdf" target="_blank" rel="noopener noreferrer" variant="outlined" className={styles.btns}>Currículo</Button>
+          <Button href="/Curriculo.pdf" target="_blank" rel="noopener noreferrer" variant="outlined" className={styles.btns}>Currículo</Button>
         </Box>
         <MouseIcon id="QuemSou" className={`${styles.iconMouse} ${styles.saltitar}`} fontSize="large" />
         <KeyboardDoubleArrowDownIcon className={`${styles.iconScroll} ${styles.saltitar}`} fontSize="large" />
@@ -82,7 +82,7 @@ export default function Home() {
           <Skills />
         </Box>
         <Box className={styles.ContainerTitleProjects}>
-          <h1 id="Projetos" className={styles.TitleProjects}>PROJETOS</h1>
+          <h1 id="Projetos" className={styles.TitleProjects}>PRINCIPAIS PROJETOS</h1>
         </Box>
       </Box>
 
