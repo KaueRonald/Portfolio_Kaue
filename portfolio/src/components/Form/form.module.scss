@@ -10,7 +10,24 @@
 
     .formDataOne {
         display: flex;
+
+
+
     }
+
+    .containerInputName {
+        display: flex;
+        flex-direction: column;
+        margin-top: 10px;
+        width: 100%;
+
+        .nameInput {
+            color: $hovers;
+            margin-left: 10px;
+            text-align: start;
+        }
+    }
+
 
     .inputs {
         margin: 10px 10px 0px 10px;
