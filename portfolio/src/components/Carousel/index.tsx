@@ -61,7 +61,7 @@ const Carousell: React.FC = () => {
                     </Box>
                 </Box>
 
-                <Box >
+                {/* <Box >
                     <h2 className={styles.TitleCarrousel}>D I F E R E N C I A I S</h2>
                     <Box className={styles.ContentOne}>
                         <FactCheckIcon className={styles.iconMui} />
@@ -71,7 +71,7 @@ const Carousell: React.FC = () => {
                             integração e aceitação, para garantir a qualidade e estabilidade do produto em todas as fases do desenvolvimento.</p>
                         </Box>
                     </Box>
-                </Box>
+                </Box> */}
 
                 <Box >
                     <h2 className={styles.TitleCarrousel}>D I F E R E N C I A I S</h2>
