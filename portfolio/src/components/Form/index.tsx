@@ -50,14 +50,29 @@ const Form: React.FC = () => {
         <Box className={styles.container}>
             <FormControl component="form" className={styles.form} onSubmit={sendEmail}>
                 <Box className={styles.formDataOne}>
-                    <TextField className={styles.inputs} id="filled-basic" type='text' label="Seu Nome" value={Name} onChange={(e) => setName(e.target.value)} variant="filled" placeholder='Nome' required />
-                    <TextField className={styles.inputs} id="filled-basic" type='email' label="E-mail" value={Email} onChange={(e) => setEmail(e.target.value)} variant="filled" placeholder='Email' required />
+                    <Box className={styles.containerInputName}>
+                        <p className={styles.nameInput}>Seu nome:</p>
+                        <TextField className={styles.inputs} id="outlined-required" type='text' value={Name} onChange={(e) => setName(e.target.value)} variant="outlined" placeholder='Nome' required />
+                    </Box>
+                    <Box className={styles.containerInputName}>
+                        <p className={styles.nameInput}>Seu Email:</p>
+                        <TextField className={styles.inputs} id="outlined-required" type='email' value={Email} onChange={(e) => setEmail(e.target.value)} variant="outlined" placeholder='Email' required />
+                    </Box>
                 </Box>
                 <Box className={styles.formDataOne}>
-                    <TextField className={styles.inputs} id="filled-basic" type='tel' label="Telefone" value={Phone} onChange={(e) => setPhone(e.target.value)} variant="filled" placeholder='(__) _ ____-____' />
-                    <TextField className={styles.inputs} id="filled-basic" type='text' label="Assunto" value={Subject} onChange={(e) => setSubject(e.target.value)} variant="filled" placeholder='Assunto' required />
+                    <Box className={styles.containerInputName}>
+                        <p className={styles.nameInput}>Seu Telefone:</p>
+                        <TextField className={styles.inputs} id="outlined-required" type='tel' value={Phone} onChange={(e) => setPhone(e.target.value)} variant="outlined" placeholder='(__) _ ____-____' />
+                    </Box>
+                    <Box className={styles.containerInputName}>
+                        <p className={styles.nameInput}>Assunto do contato:</p>
+                        <TextField className={styles.inputs} id="outlined-required" type='text' value={Subject} onChange={(e) => setSubject(e.target.value)} variant="outlined" placeholder='Assunto' required />
+                    </Box>
                 </Box>
-                <TextField className={styles.inputs} id="outlined-multiline-flexible" multiline type='text' label="Mensagem" value={Message} onChange={(e) => setMessage(e.target.value)} variant="filled" placeholder='Mensagem' minRows={3} maxRows={6} required />
+                <Box className={styles.containerInputName}>
+                    <p className={styles.nameInput}>Mensagem:</p>
+                    <TextField className={styles.inputs} id="outlined-multiline-flexible" multiline type='text' value={Message} onChange={(e) => setMessage(e.target.value)} variant="outlined" placeholder='Mensagem' minRows={3} maxRows={6} required />
+                </Box>
                 <Box className={styles.btnForm}>
                     <Button type='submit' className={styles.btnSubmit} variant="outlined"> <EmailIcon /> &nbsp; Enviar</Button>
                 </Box>
